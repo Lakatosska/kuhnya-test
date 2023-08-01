@@ -1,0 +1,52 @@
+.article {
+  width: 1090px;
+  height: 220px;
+  background-color: black;
+  border-radius: 28px;
+  display: flex;
+  box-sizing: border-box;
+  border: 8px solid black;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image{
+  width: 230px;
+  height: 220px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.button {
+  width: 92px;
+  height: 92px;
+  border-radius: 20%;
+  border: 2px solid white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: rgb(58, 63, 63);
+  cursor: pointer;
+}
+
+.recipeTitle {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
