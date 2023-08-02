@@ -1,0 +1,22 @@
+.titleBlock {
+  display: flex;
+  align-items: center;
+  height: 112px;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #000;
+}
+
+.link {
+  font-size: 30px;
+  color: #E8912D;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #e4bf89;
+}
