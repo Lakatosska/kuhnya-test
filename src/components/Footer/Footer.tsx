@@ -1,12 +1,13 @@
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 export const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <p>О телеканале</p>
-      <p>Техническая поддержка</p>
-      <p>Условия использования</p>
+      <Link href="/info" className={styles.link}>О телеканале</Link>
+      <Link href="/info" className={styles.link}>Техническая поддержка</Link>
+      <Link href="/info" className={styles.link}>Условия использования</Link>
     </footer>
   )
 }

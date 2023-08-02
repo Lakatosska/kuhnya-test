@@ -1,3 +1,12 @@
 .footer {
   height: 518px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 1rem;
+}
+
+.link {
+  margin-bottom: 30px;
+  color: #ACA3A3;
+  font-size: 26px;
 }
