@@ -9,10 +9,10 @@ interface ILifehack {
   rating?: number;
 }
 
-export const recipes: ILifehack[] = [
+export const lifehacksData: ILifehack[] = [
   {
     image: image4,
-    title: 'Лук без слез. 5 лайфхаков',
+    title: 'Лук без\u00A0слез 5\u00A0лайфхаков',
   },
   {
     image: image5,
@@ -20,22 +20,14 @@ export const recipes: ILifehack[] = [
   },
   {
     image: image6,
-    title: 'Выбираем рыбу к ужину',
+    title: 'Выбираем рыбу к\u00A0ужину',
   },
   {
     image: image6,
-    title: 'Выбираем рыбу к ужину',
+    title: 'Выбираем рыбу к\u00A0ужину',
   },
   {
     image: image6,
-    title: 'Выбираем рыбу к ужину',
-  },
-  {
-    image: image6,
-    title: 'Выбираем рыбу к ужину',
-  },
-  {
-    image: image6,
-    title: 'Выбираем рыбу к ужину',
+    title: 'Выбираем рыбу к\u00A0ужину',
   },
 ];

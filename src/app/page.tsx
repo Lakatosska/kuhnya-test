@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { MySwiper, MySwiper2 } from '@/components/Swiper/Swiper'
-import { RecipeWidget } from '@/components/RecipeWidget/RecipeWidget'
-import Image from 'next/image'
-import styles from './page.module.css'
-import { HeaderUserWidget } from '@/components/HeaderUserWidget/HeaderUserWidget';
-import { SectionTitle, SectionTitle2 } from '@/components/SectionTitle/SectionTitle';
+import { RecipeWidget } from '@/components/RecipeWidget/RecipeWidget';
+import { recipesData } from '@/utils/recipes-data';
+import { lifehacksData } from '@/utils/lifehacks-data';
+import { RecipeSlider } from '@/components/Sliders/RecipeSlider/RecipeSlider';
+import { LifehackSlider } from '@/components/Sliders/LifehackSlider/LifehackSlider';
+import styles from './page.module.css';
 
 export default function Home() {
 
@@ -17,10 +17,8 @@ export default function Home() {
       {
         RecipeWidgetOpen && <RecipeWidget close={() => setRecipeWidgetOpen(false)}/>
       }
-      <SectionTitle />
-      <MySwiper />
-      <SectionTitle2 />
-      <MySwiper2 />
+      <RecipeSlider data={recipesData} title="Мои рецепты" link="/recipes" />
+      <LifehackSlider data={lifehacksData} title="Мои лайфхаки" link="/lifehacks" />
     </main>
   )
 }

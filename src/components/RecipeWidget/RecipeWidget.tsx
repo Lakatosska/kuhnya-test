@@ -1,10 +1,8 @@
 'use client';
 
+import { FC } from "react";
 import image1 from '@/assets/images/mussels.jpg';
 import Image from 'next/image';
-
-import { FC } from "react";
-
 import CloseIcon from '@/assets/icons/close.svg';
 import ClockIcon from '@/assets/icons/clock.png';
 

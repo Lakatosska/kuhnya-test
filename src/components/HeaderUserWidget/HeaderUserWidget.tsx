@@ -21,7 +21,7 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
         <div className={styles.upperHeader}>
             <h1 className={styles.title}>Моя КУХНЯ</h1>
             <button type="button" onClick={()=> close()} className={styles.button}>
-              <Image src={CloseIcon} alt="close button" />
+              <Image src={CloseIcon} alt="иконка закрыть" />
             </button> 
         </div>
 
