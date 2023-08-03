@@ -4,7 +4,7 @@ export interface IUser {
   bonus?: number;
 }
 
-export const User: IUser = {
+export const user: IUser = {
   username: '',
   email: '',
   bonus: 897,
