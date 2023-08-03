@@ -1,22 +1,22 @@
 'use client';
 
-import image1 from '@/assets/images/mussels.jpg';
 import Image from 'next/image';
-
+import Link from 'next/link';
 import { FC } from "react";
 
 import CloseIcon from '@/assets/icons/close.svg';
-import BonusCrown from '@/assets/icons/bonus-crown.png';
 import ProfileIcon from '@/assets/icons/ball.png';
+import { User } from '@/utils/user-data';
+import { BonusDisplay } from '../BonusDisplay/BonusDisplay';
 
 import styles from '@/components/HeaderUserWidget/HeaderUserWidget.module.css';
-import Link from 'next/link';
 
 interface RecipeWidgetProps {
-  close: ()=> void
+  close: ()=> void;
 }
 
-export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
+
+export const HeaderUserWidget: FC<RecipeWidgetProps> = ( { close }) => {
 
   return (
     <article className={styles.article}>
@@ -31,11 +31,7 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
 
         <div className={styles.userWidgets}>
           <div className={styles.userBonus}>
-            <p className={styles.titleBonus}>Ваши баллы</p>
-            <div className={styles.infoBonus}>
-              <Image src={BonusCrown} alt="иконка бонуса" />
-              <span className={styles.digits}>897</span>
-            </div>
+            <BonusDisplay bonus={User.bonus}/>
           </div>
 
           <Link href="/profile" className={styles.userProfile}>

@@ -44,7 +44,6 @@
 .userWidgets {
   display: flex;
   justify-content: space-around;
-  
 }
 
 .userBonus {
@@ -57,22 +56,6 @@
   padding: 36px 56px;
   justify-content: space-around;
   z-index: 1;
-}
-
-.infoBonus {
-  display: flex;
-  align-items: center;
-}
-
-.digits {
-  font-size: 55px;
-  font-weight: 700;
-  color: #000;
-}
-
-.titleBonus {
-  font-size: 30px;
-  color: grey;
 }
 
 .userProfile {
