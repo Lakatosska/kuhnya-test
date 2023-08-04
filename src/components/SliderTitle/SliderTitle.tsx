@@ -1,7 +1,13 @@
+import { FC } from 'react';
 import Link from 'next/link';
 import styles from './SliderTitle.module.css';
 
-export const SliderTitle = ({ title, link }) => {
+interface ISliderTitleProps {
+  title: string;
+  link: string;
+}
+
+export const SliderTitle: FC<ISliderTitleProps> = ({ title, link }) => {
 
   return (
     <div className={styles.titleBlock}>

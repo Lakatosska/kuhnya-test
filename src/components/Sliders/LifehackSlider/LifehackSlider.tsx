@@ -1,17 +1,25 @@
 "use client"
 
+import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
 import { SliderTitle } from '@/components/SliderTitle/SliderTitle';
 import { LifehackCard } from '@/components/LifehackCard/LifehackCard';
+import { ILifehackProps } from '@/utils/data/lifehacks-data';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import styles from './LifehackSlider.module.css';
 
-export function LifehackSlider ({ data, title, link }) {
+interface LifehackSliderProps {
+  data: ILifehackProps[];
+  title: string;
+  link: string;
+}
+
+export const LifehackSlider: FC<LifehackSliderProps> = ({ data, title, link }) => {
   return (
-    <>
+    <section>
       <SliderTitle title={title} link={link}/>
       <Swiper
         slidesPerView={'auto'}
@@ -26,6 +34,6 @@ export function LifehackSlider ({ data, title, link }) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </section>
   );
 }

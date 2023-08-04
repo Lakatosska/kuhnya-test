@@ -16,7 +16,7 @@ interface RecipeWidgetProps {
 export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
 
   return (
-    <article className={styles.article}>
+    <div className={styles.widget}>
       <div className={styles.overlay}>
       
         <div className={styles.upperHeader}>
@@ -38,6 +38,6 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
 
         </div>
       </div>
-    </article>
+    </div>
   )
 }

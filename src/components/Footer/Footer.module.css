@@ -2,11 +2,11 @@
   height: 518px;
   display: flex;
   flex-direction: column;
-  padding: 36px 1rem;
+  padding: 0 40px 40px;
 }
 
 .link {
   margin-bottom: 30px;
-  color: #ACA3A3;
+  color: var(--color-text-gray);
   font-size: 26px;
 }

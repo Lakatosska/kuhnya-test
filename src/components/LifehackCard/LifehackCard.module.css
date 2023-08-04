@@ -6,29 +6,27 @@
   position: relative;
   width: 324px;
   height: 554px;
-
 }
 
 .image {
   display: block;
   width: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
 }
 
 .titleContainer {
   max-height: 84px;
   overflow: hidden;
   position: absolute;
-  top: 85%; 
+  top: 87%; 
   left: 40%; 
   transform: translate(-50%, -50%);
   text-overflow: ellipsis;
-  
 }
 
 .title {
   font-size: 30px;
   text-overflow: ellipsis;
-  color: #fff;
+  color: var(--color-text-white);
 }

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { user } from '@/utils/user-data';
+import { user } from '@/utils/data/user-data';
 import BonusCrown from '@/assets/icons/bonus-crown.png';
 import styles from './BonusDisplay.module.css'
 

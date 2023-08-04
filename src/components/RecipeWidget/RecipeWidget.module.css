@@ -1,11 +1,11 @@
-.article {
+.widget {
   width: 1090px;
   height: 220px;
-  background-color: black;
-  border-radius: 28px;
+  background-color: var(--color-black);
+  border-radius: var(--border-radius);
   display: flex;
   box-sizing: border-box;
-  border: 8px solid black;
+  border: 8px solid var(--black);
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
@@ -29,8 +29,8 @@
 .button {
   width: 92px;
   height: 92px;
-  border-radius: 20%;
-  border: 1px solid rgb(138, 132, 132);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-text-gray);
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -38,13 +38,13 @@
 }
 
 .button:hover {
-  background-color: rgb(58, 63, 63);
+  background-color: var(--button-hover);
   cursor: pointer;
 }
 
 .recipeTitle {
   font-size: 30px;
-  color: white;
+  color: var(--color-text-gray);
   margin: 0;
   padding: 0;
   white-space: nowrap;
