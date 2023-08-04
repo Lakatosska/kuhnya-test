@@ -1,0 +1,29 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background-color: var(--color-black);
+}
+
+.timeMin {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--color-bg);
+  margin-left: 26px;
+}
+
+.timeSec {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--color-bg);
+  margin-left: 10px;
+}
