@@ -6,6 +6,7 @@ import Image from 'next/image';
 import CloseIcon from '@/assets/icons/close.svg';
 import ClockIcon from '@/assets/icons/clock.png';
 import styles from './RecipeWidget.module.css';
+import { Timer } from "../Timer/Timer";
 
 interface RecipeWidgetProps {
   close: ()=> void
@@ -21,10 +22,7 @@ export const RecipeWidget: FC<RecipeWidgetProps> = ({ close }) => {
         className={styles.image}
       />
       <div className={styles.info}>
-        <div className={styles.clock}>
-          <Image src={ClockIcon} alt="clock icon" />
-          <span className={styles.time}>01 : 29</span>
-        </div>
+        <Timer />
         <p className={styles.recipeTitle}>Венские вафли с малиной и кленовым сиропом</p>
       </div>
 

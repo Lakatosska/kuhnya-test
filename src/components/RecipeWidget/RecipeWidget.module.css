@@ -9,7 +9,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px 0 0;
+  padding: 0 52px 0 0;
 }
 
 .image{
@@ -60,6 +60,6 @@
 
 .time {
   font-size: 50px;
-  color: white;
+  color: var(--color-white);
   margin-left: 30px;
 }
