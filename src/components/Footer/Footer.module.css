@@ -7,6 +7,6 @@
 
 .link {
   margin-bottom: 30px;
-  color: #ACA3A3;
+  color: var(--color-text-gray);
   font-size: 26px;
 }

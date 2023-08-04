@@ -5,11 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
 import { SliderTitle } from '@/components/SliderTitle/SliderTitle';
 import { LifehackCard } from '@/components/LifehackCard/LifehackCard';
+import { ILifehackProps } from '@/utils/data/lifehacks-data';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import styles from './LifehackSlider.module.css';
-import { ILifehackProps } from '@/utils/data/lifehacks-data';
 
 interface LifehackSliderProps {
   data: ILifehackProps[];

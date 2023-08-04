@@ -8,15 +8,15 @@
 .title {
   font-size: 38px;
   font-weight: 700;
-  color: var(--black);
+  color: var(--color-black);
 }
 
 .link {
   font-size: 30px;
-  color: var(--orange);
+  color: var(--color-orange);
 }
 
 .link:hover {
   cursor: pointer;
-  color: var(--orange-light);
+  color: var(--color-orange-light);
 }

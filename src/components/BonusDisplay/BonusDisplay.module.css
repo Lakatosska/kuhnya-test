@@ -6,10 +6,10 @@
 .digits {
   font-size: 55px;
   font-weight: 700;
-  color: #000;
+  color: var(--black);
 }
 
 .titleBonus {
   font-size: 30px;
-  color: grey;
+  color: var(--color-text-gray);
 }

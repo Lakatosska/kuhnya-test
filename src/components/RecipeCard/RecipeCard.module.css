@@ -12,12 +12,13 @@
   width: 356px;
   height: 410px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 
 .categoryContainer {
   background-color: rgba(136, 129, 129, 0.5); 
+  backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -26,12 +27,11 @@
   position: absolute;
   top: 340px;
   left: 12px;
-
 }
 
 .category {
   font-size: 28px;
-  color: #fff;
+  color: var(--color-text-white);
 }
 
 .titleContainer {
