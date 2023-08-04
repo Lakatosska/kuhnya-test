@@ -32,7 +32,8 @@
   display: flex;
   height: 188px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 118px 0 240px;
 }
 
 .title {
@@ -44,7 +45,6 @@
 .userWidgets {
   display: flex;
   justify-content: space-around;
-  
 }
 
 .userBonus {
@@ -57,22 +57,6 @@
   padding: 36px 56px;
   justify-content: space-around;
   z-index: 1;
-}
-
-.infoBonus {
-  display: flex;
-  align-items: center;
-}
-
-.digits {
-  font-size: 55px;
-  font-weight: 700;
-  color: #000;
-}
-
-.titleBonus {
-  font-size: 30px;
-  color: grey;
 }
 
 .userProfile {
@@ -95,4 +79,13 @@
 .titleProfile {
   font-size: 30px;
   color: #fff;
+}
+
+.logo {
+  width: 520px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }

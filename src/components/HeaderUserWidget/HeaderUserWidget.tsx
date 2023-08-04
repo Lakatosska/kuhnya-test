@@ -1,19 +1,16 @@
 'use client';
 
-import image1 from '@/assets/images/mussels.jpg';
 import Image from 'next/image';
-
-import { FC } from "react";
-
-import CloseIcon from '@/assets/icons/close.svg';
-import BonusCrown from '@/assets/icons/bonus-crown.png';
-import ProfileIcon from '@/assets/icons/ball.png';
-
-import styles from '@/components/HeaderUserWidget/HeaderUserWidget.module.css';
 import Link from 'next/link';
+import { FC } from "react";
+import CloseIcon from '@/assets/icons/close.svg';
+import ProfileIcon from '@/assets/icons/ball.png';
+import { BonusDisplay } from '../BonusDisplay/BonusDisplay';
+import Logo from '@/assets/icons/logo.png'
+import styles from '@/components/HeaderUserWidget/HeaderUserWidget.module.css';
 
 interface RecipeWidgetProps {
-  close: ()=> void
+  close: ()=> void;
 }
 
 export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
@@ -23,19 +20,15 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
       <div className={styles.overlay}>
       
         <div className={styles.upperHeader}>
-            <h1 className={styles.title}>Моя КУХНЯ</h1>
+            <Image src={Logo} alt="логотип моя кухня" className={styles.logo}/>
             <button type="button" onClick={()=> close()} className={styles.button}>
-              <Image src={CloseIcon} alt="close button" />
+              <Image src={CloseIcon} alt="иконка закрыть" />
             </button> 
         </div>
 
         <div className={styles.userWidgets}>
           <div className={styles.userBonus}>
-            <p className={styles.titleBonus}>Ваши баллы</p>
-            <div className={styles.infoBonus}>
-              <Image src={BonusCrown} alt="иконка бонуса" />
-              <span className={styles.digits}>897</span>
-            </div>
+            <BonusDisplay />
           </div>
 
           <Link href="/profile" className={styles.userProfile}>

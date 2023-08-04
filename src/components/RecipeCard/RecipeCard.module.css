@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  box-sizing: border-box;
+  width: 356px;
+  height: 502px;
+}
+
+.image {
+  display: block;
+  width: 356px;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.titleContainer {
+  max-height: 84px;
+  overflow: hidden;
+  
+}
+
+.title {
+  font-size: 30px;
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
