@@ -6,6 +6,7 @@ import { FC } from "react";
 import CloseIcon from '@/assets/icons/close.svg';
 import ProfileIcon from '@/assets/icons/ball.png';
 import { BonusDisplay } from '../BonusDisplay/BonusDisplay';
+import Logo from '@/assets/icons/logo.png'
 import styles from '@/components/HeaderUserWidget/HeaderUserWidget.module.css';
 
 interface RecipeWidgetProps {
@@ -19,7 +20,7 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
       <div className={styles.overlay}>
       
         <div className={styles.upperHeader}>
-            <h1 className={styles.title}>Моя КУХНЯ</h1>
+            <Image src={Logo} alt="логотип моя кухня" className={styles.logo}/>
             <button type="button" onClick={()=> close()} className={styles.button}>
               <Image src={CloseIcon} alt="иконка закрыть" />
             </button> 
