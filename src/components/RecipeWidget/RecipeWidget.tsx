@@ -15,26 +15,23 @@ interface RecipeWidgetProps {
 export const RecipeWidget: FC<RecipeWidgetProps> = ({ close }) => {
 
   return (
-    <section>
-      <article className={styles.article}>
-        <Image 
-          src={image1} 
-          alt="mussels" 
-          className={styles.image}
-        />
-        <div className={styles.info}>
-          <div className={styles.clock}>
-            <Image src={ClockIcon} alt="clock icon" />
-            <span className={styles.time}>01 : 29</span>
-          </div>
-          <p className={styles.recipeTitle}>Венские вафли с малиной и кленовым сиропом</p>
+    <section className={styles.widget}>
+      <Image 
+        src={image1} 
+        alt="mussels" 
+        className={styles.image}
+      />
+      <div className={styles.info}>
+        <div className={styles.clock}>
+          <Image src={ClockIcon} alt="clock icon" />
+          <span className={styles.time}>01 : 29</span>
         </div>
+        <p className={styles.recipeTitle}>Венские вафли с малиной и кленовым сиропом</p>
+      </div>
 
-        <button type="button" onClick={()=> close()} className={styles.button}>
-          <Image src={CloseIcon} alt="close button" />
-        </button>
-
-      </article>
+      <button type="button" onClick={()=> close()} className={styles.button}>
+        <Image src={CloseIcon} alt="close button" />
+      </button>
     </section>
   )
 }

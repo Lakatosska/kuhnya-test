@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { RecipeWidget } from '@/components/RecipeWidget/RecipeWidget';
-import { recipesData } from '@/utils/recipes-data';
-import { lifehacksData } from '@/utils/lifehacks-data';
+import { recipesData } from '@/utils/data/recipes-data';
+import { lifehacksData } from '@/utils/data/lifehacks-data';
 import { RecipeSlider } from '@/components/Sliders/RecipeSlider/RecipeSlider';
 import { LifehackSlider } from '@/components/Sliders/LifehackSlider/LifehackSlider';
 import styles from './page.module.css';

@@ -1,11 +1,10 @@
-.article {
+.widget {
   width: 1170px;
   height: 446px;
   background-image: url('../../assets/images/background-header.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 
 .overlay {
@@ -82,8 +81,8 @@
 }
 
 .logo {
-  width: 520px;
-  height: 100px;
+  width: 560px;
+  height: 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

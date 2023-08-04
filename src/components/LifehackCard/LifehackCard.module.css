@@ -6,7 +6,6 @@
   position: relative;
   width: 324px;
   height: 554px;
-
 }
 
 .image {
@@ -20,11 +19,10 @@
   max-height: 84px;
   overflow: hidden;
   position: absolute;
-  top: 85%; 
+  top: 87%; 
   left: 40%; 
   transform: translate(-50%, -50%);
   text-overflow: ellipsis;
-  
 }
 
 .title {

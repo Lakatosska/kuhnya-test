@@ -2,15 +2,7 @@ import image1 from '@/assets/images/mussels.jpg';
 import image2 from '@/assets/images/drink.jpg';
 import image3 from '@/assets/images/spices.jpg';
 
-interface IRecipe {
-  id: number,
-  image: any;
-  title: string;
-  category: string;
-  rating?: number;
-}
-
-export const recipesData: IRecipe[] = [
+export const recipesData = [
   {
     id: 1,
     image: image1,

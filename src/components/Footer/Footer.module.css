@@ -2,7 +2,7 @@
   height: 518px;
   display: flex;
   flex-direction: column;
-  padding: 36px 1rem;
+  padding: 0 40px 40px;
 }
 
 .link {
