@@ -4,7 +4,6 @@ import { FC } from "react";
 import image1 from '@/assets/images/mussels.jpg';
 import Image from 'next/image';
 import CloseIcon from '@/assets/icons/close.svg';
-import ClockIcon from '@/assets/icons/clock.png';
 import styles from './RecipeWidget.module.css';
 import { Timer } from "../Timer/Timer";
 
