@@ -8,5 +8,5 @@
 Продумана логика нажатия кнопок и будильника.<br>
 Использовались готовые библиотеки:<br>
 -	swapper
--	react-timer-hook
+-	react-timer-hook<br>
 Оптимизация изображений: https://tinypng.com/
