@@ -12,10 +12,8 @@ export function Timer() {
   const {
     seconds,
     minutes,
-    hours,
     start,
     pause,
-    reset,
   } = useStopwatch({ autoStart: false });
 
   const [ started, setStarted ] = useState(false);
@@ -37,15 +35,11 @@ export function Timer() {
           <Image
           src={PauseIcon}
           alt="pause"
-          layout='fill'
-          objectFit='contain'
           />) : 
           (
           <Image
           src={ClockIcon}
           alt="play"
-          layout='fill'
-          objectFit='contain'
           />
           )}
       </button>
