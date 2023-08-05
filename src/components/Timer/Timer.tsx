@@ -5,7 +5,6 @@ import { useStopwatch } from 'react-timer-hook';
 import Image from 'next/image';
 import ClockIcon from '@/assets/icons/clock.png';
 import PauseIcon from '@/assets/icons/pause.png';
-
 import styles from './Timer.module.css'
 
 export function Timer() {
