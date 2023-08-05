@@ -7,6 +7,10 @@
   height: 64px;
 }
 
+.button:hover {
+  background-color: var(--button-hover);
+}
+
 .timer {
   display: flex;
   align-items: center;
