@@ -1,6 +1,9 @@
 import image1 from '@/assets/images/mussels.jpg';
 import image2 from '@/assets/images/drink.jpg';
-import image3 from '@/assets/images/spices.jpg';
+import image3 from '@/assets/images/shrimps.jpg';
+import image4 from '@/assets/images/cake.jpg';
+import image5 from '@/assets/images/spices.jpg';
+import image6 from '@/assets/images/brusketts.jpg';
 
 export const recipesData = [
   {
@@ -18,25 +21,25 @@ export const recipesData = [
   {
     id: 3,
     image: image3,
-    title: 'Каша по-королевски',
+    title: 'Лапша с\u00A0креветками',
     category: 'По-домашнему',
   },
   {
     id: 4,
-    image: image3,
-    title: 'Каша по-королевски',
-    category: 'По-домашнему',
+    image: image4,
+    title: 'Малиновый торт',
+    category: 'Классика',
   },
   {
     id: 5,
-    image: image3,
+    image: image5,
     title: 'Каша по-королевски',
     category: 'По-домашнему',
   },
   {
     id: 6,
-    image: image3,
-    title: 'Каша по-королевски',
+    image: image6,
+    title: 'Итальянская брускетта',
     category: 'По-домашнему',
   },
 ];
