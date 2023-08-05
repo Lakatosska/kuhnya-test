@@ -16,11 +16,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="ru">
       <body className={commissioner.className}>
-        <Header />
-          {children}
+        {children}
         <Footer />
       </body>
     </html>
