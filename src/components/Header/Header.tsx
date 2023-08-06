@@ -30,7 +30,7 @@ export const Header: FC = () => {
           {authorized ? (
             <>
               <Image src={myLogo} alt="логотип моя кухня" className={styles.myLogo} />
-              <button type="button" onClick={toggle} className={styles.button}>
+              <button type="button" onClick={toggle} className={styles.buttonClose}>
                 <Image src={CloseIcon} alt="иконка закрыть" className={styles.closeIcon}/>
               </button> 
             </>
