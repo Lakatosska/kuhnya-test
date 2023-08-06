@@ -1,57 +1,35 @@
 .widget {
   width: 100%;
-  height: 220px;
+  height: 74px;
   background-color: var(--color-black);
-  border-radius: var(--border-radius);
+  border-radius: 12px;
   display: flex;
   box-sizing: border-box;
-  border: 8px solid var(--black);
+  border: 2px solid black;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-  padding: 0 52px 0 0;
-}
-
-@media screen and (max-width: 390px) {
-  .widget {
-    height: 74px;
-    padding: 0 18px 0 0;
-    border: 2px solid var(--black);
-    border-radius: 12px;
-  }
+  padding: 0 18px 0 0;
 }
 
 .image{
-  width: 230px;
-  height: 220px;
+  width: 76px;
+  height: 74px;
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 390px) {
-  .image {
-    width: 76px;
-    height: 74px;
-  }
-}
-
 .info {
   display: flex;
   flex-direction: column;
-  width: 550px;
-}
-
-@media screen and (max-width: 390px) {
-  .info {
-    width: 184px;
-  }
+  width: 184px;
 }
 
 .button {
-  width: 92px;
-  height: 92px;
-  border-radius: var(--border-radius);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
   border: 1px solid var(--color-text-gray);
   background-color: transparent;
   display: flex;
@@ -59,35 +37,14 @@
   align-items: center;
 }
 
-@media screen and (max-width: 390px) {
-  .button {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-  }
-}
-
-.button:hover {
-  background-color: var(--button-hover);
-  cursor: pointer;
-}
-
 .recipeTitle {
-  font-size: 30px;
+  font-size: 10px;
   color: var(--color-text-gray);
-  margin: 0;
+  margin-top: 7px;
   padding: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 390px) {
-  .recipeTitle {
-    font-size: 10px;
-    margin-top: 7px;
-  }
 }
 
 .clock {
@@ -96,21 +53,12 @@
 }
 
 .time {
-  font-size: 50px;
+  font-size: 16px;
   color: var(--color-white);
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
-@media screen and (max-width: 390px) {
-  .time {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .icon {
-    width: 14px;
-    height: 14px;
-  }
+.icon {
+  width: 14px;
+  height: 14px;
 }

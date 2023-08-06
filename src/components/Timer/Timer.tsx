@@ -32,17 +32,17 @@ export function Timer() {
       <button onClick={handlePlay} className={styles.button}>
         {started ? (
           <Image
-          src={PauseIcon}
-          alt="pause"
-          className={styles.clockIcon}
+            src={PauseIcon}
+            alt="pause"
+            className={styles.clockIcon}
           />) : 
           (
           <Image
-          src={ClockIcon}
-          alt="play"
-          className={styles.clockIcon}
+            src={ClockIcon}
+            alt="play"
+            className={styles.clockIcon}
           />
-          )}
+        )}
       </button>
       <span className={styles.timeMin}>{minutes< 10 ? `0${minutes}`: minutes} :</span><span className={styles.timeSec}>{seconds < 10 ? `0${seconds}`: seconds}</span>
     </div>

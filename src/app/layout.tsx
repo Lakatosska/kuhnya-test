@@ -1,8 +1,10 @@
-import { Header } from '@/components/Header/Header'
-import './globals.css'
 import type { Metadata } from 'next'
 import { Commissioner } from 'next/font/google'
-import { Footer } from '@/components/Footer/Footer'
+import { AuthProvider } from '@/utils/AuthContext';
+import { Header } from '@/components/Header/Header'
+import { Footer } from '@/components/Footer/Footer';
+import './globals.css';
+import styles from './page.module.css';
 
 const commissioner = Commissioner({ subsets: ['cyrillic'] })
 
@@ -20,8 +22,15 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={commissioner.className}>
-        {children}
-        <Footer />
+        <div className={styles.wrapper}>
+          <AuthProvider>
+            <Header />
+              <main className={styles.main}>
+                {children}
+              </main>
+            <Footer />
+          </AuthProvider>
+        </div>
       </body>
     </html>
   )

@@ -9,9 +9,9 @@
 html,
 body {
   max-width: 100vw; 
-  overflow-x: hidden;
-  margin: 0 auto;
   background: var(--color-bg);
+  height: 100%;
+  margin: 0;
 }
 
 a {
@@ -27,6 +27,4 @@ a {
   --color-black-60: rgba(40, 41, 41, 0.6);
   --color-text-white: #fff;
   --color-text-gray: #8c8585;
-  --button-hover: rgba(128, 128, 128, 0.4);
-  --border-radius: 26px;
 }
