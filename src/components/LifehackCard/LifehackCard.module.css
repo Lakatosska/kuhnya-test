@@ -4,32 +4,18 @@
   list-style: none;
   box-sizing: border-box;
   position: relative;
-  width: 324px;
-  height: 554px;
-}
-
-@media screen and (max-width: 390px) {
-  .card {
-    width: 108px;
-    height: 184px;
-  }
+  width: 108px;
+  height: 184px;
 }
 
 .image {
   display: block;
   width: 100%;
   object-fit: cover;
-  border-radius: var(--border-radius);
-}
-
-@media screen and (max-width: 390px) {
-  .image {
-    border-radius: 9px;
-  }
+  border-radius: 9px;
 }
 
 .titleContainer {
-  max-height: 84px;
   overflow: hidden;
   position: absolute;
   top: 87%; 
@@ -39,13 +25,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 10px;
   text-overflow: ellipsis;
   color: var(--color-text-white);
-}
-
-@media screen and (max-width: 390px) {
-  .title {
-    font-size: 10px;
-  }
 }

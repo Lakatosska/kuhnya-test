@@ -1,27 +1,15 @@
 .footer {
-  max-width: 1440px;
-  height: 518px;
+  width: 100%;
+  height: 154px;
   display: flex;
   flex-direction: column;
-  padding: 0 40px 40px;
-}
-
-@media screen and (max-width: 390px) {
-  .footer {
-    padding: 0 14px 14px;
-    
-  }
+  padding: 0 14px 14px;
+  /* position: sticky;
+  bottom: 0; */
 }
 
 .link {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: var(--color-text-gray);
-  font-size: 26px;
-}
-
-@media screen and (max-width: 390px) {
-  .link {
-    margin-bottom: 10px;
-    font-size: 8px;
-  }
+  font-size: 8px;
 }

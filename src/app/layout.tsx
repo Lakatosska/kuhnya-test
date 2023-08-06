@@ -22,13 +22,15 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={commissioner.className}>
-        <AuthProvider>
-          <Header />
-            <main className={styles.main}>
-              {children}
-            </main>
-          <Footer />
-        </AuthProvider>
+        <div className={styles.wrapper}>
+          <AuthProvider>
+            <Header />
+              <main className={styles.main}>
+                {children}
+              </main>
+            <Footer />
+          </AuthProvider>
+        </div>
       </body>
     </html>
   )

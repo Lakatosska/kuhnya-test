@@ -1,18 +1,10 @@
 .header {
-  max-width: 1440px;
-  height: 446px;
+  width: 100%;
+  height: 160px;
   background-image: url('../../assets/images/my-background-header.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-}
-
-@media screen and (max-width: 390px) {
-  .header {
-    width: 100%;
-    height: 160px;
-  }
 }
 
 .overlay {
@@ -27,95 +19,41 @@
 
 .upperHeader {
   display: flex;
-  height: 188px;
+  height: 62px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 118px 0 300px;
-}
-
-@media screen and (max-width: 390px) {
-  .upperHeader {
-    height: 62px;
-    padding: 0 40px 0 80px;
-  }
+  padding: 0 40px 0 80px;
 }
 
 .myLogo {
-  width: 330px;
-  height: 80px;
+  width: 186px;
+  height: 26px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 390px) {
-  .myLogo {
-    width: 186px;
-    height: 26px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .logo {
-    width: 140px;
-    height: 26px;
-  }
+.logo {
+  width: 140px;
+  height: 26px;
 }
 
 .button {
-  background-color: var(--color-black-60);
-  border: none;
-  width: 80px;
-  height: 80px;
-  border-radius: var(--border-radius);
-}
-
-.button:hover {
-  cursor: pointer;
-  background-color: var(--button-hover);
-}
-
-@media screen and (max-width: 390px) {
-  .button {
-    width: 26px;
-    height: 26px;
-    border-radius: 6px;
-  }
-}
-
-.buttonClose {
   background-color: transparent;
   border: none;
-  width: 80px;
-  height: 80px;
-  border-radius: var(--border-radius);
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
 }
 
-.buttonClose:hover {
-  cursor: pointer;
-  background-color: var(--button-hover);
+.closeIcon {
+  width: 12px;
+  height: 12px;
 }
 
-@media screen and (max-width: 390px) {
-  .buttonClose {
-    width: 26px;
-    height: 26px;
-    border-radius: 6px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .closeIcon {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .authIcon {
-    width: 18px;
-    height: 18px;
-  }
+.authIcon {
+  width: 18px;
+  height: 18px;
 }
 
 .userWidgets {
@@ -124,67 +62,37 @@
 }
 
 .userBonus {
-  width: 454px;
-  height: 200px;
+  width: 152px;
+  height: 66px;
   background-color: var(--color-bg);
   display: flex;
   flex-direction: column;
-  border-radius:var(--border-radius);
-  padding: 36px 56px;
+  border-radius: 12px;
+  padding: 12px 18px;
   justify-content: space-around;
   z-index: 1;
 }
 
-@media screen and (max-width: 390px) {
-  .userBonus {
-    width: 152px;
-    height: 66px;
-    padding: 12px 18px;
-    border-radius: 12px;
-  }
-}
-
 .userProfile {
-  width: 386px;
-  height: 200px;
+  width: 128px;
+  height: 66px;
   background-color: rgba(219, 211, 211, 0.2);
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-radius: var(--border-radius);
+  border-radius: 12px;
   z-index: 1;
-  padding: 28px 56px;
-}
-
-@media screen and (max-width: 390px) {
-  .userProfile {
-    width: 128px;
-    height: 66px;
-    padding: 9px 18px;
-    border-radius: 12px;
-  }
-}
-
-.userProfile:hover {
-  background-color: rgba(194, 192, 192, 0.4);
+  padding: 9px 18px;
 }
 
 .titleProfile {
-  font-size: 30px;
+  font-size: 12px;
   color: var(--color-text-white);
 }
 
-@media screen and (max-width: 390px) {
-  .titleProfile {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .ProfileIcon {
-    width: 22px;
-    height: 22px;
-  }
+.ProfileIcon {
+  width: 22px;
+  height: 22px;
 }

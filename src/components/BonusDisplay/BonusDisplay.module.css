@@ -4,31 +4,17 @@
 }
 
 .digits {
-  font-size: 55px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--black);
 }
 
-@media screen and (max-width: 390px) {
-  .digits {
-    font-size: 18px;
-  }
-}
-
 .titleBonus {
-  font-size: 30px;
+  font-size: 10px;
   color: var(--color-text-gray);
 }
 
-@media screen and (max-width: 390px) {
-  .titleBonus {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .icon {
-    width: 22px;
-    height: 22px;
-  }
+.icon {
+  width: 22px;
+  height: 22px;
 }
