@@ -5,7 +5,7 @@ import image4 from '@/assets/images/cake.jpg';
 import image5 from '@/assets/images/spices.jpg';
 import image6 from '@/assets/images/brusketts.jpg';
 
-export const recipesData = [
+export const myRecipesData = [
   {
     id: 1,
     image: image1,
@@ -44,7 +44,7 @@ export const recipesData = [
   },
 ];
 
-export const recipesDataAll = [
+export const totalRecipesData = [
   {
     id: 1,
     image: image2,
