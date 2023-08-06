@@ -6,3 +6,9 @@
 .swiperSlide {
   width: 324px;
 }
+
+@media screen and (max-width: 390px) {
+  .swiperSlide {
+    width: 108px;
+  }
+}

@@ -20,7 +20,7 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
         <div className={styles.upperHeader}>
             <Image src={myLogo} alt="логотип моя кухня" className={styles.logo}/>
             <button type="button" onClick={()=> close()} className={styles.button}>
-              <Image src={CloseIcon} alt="иконка закрыть" />
+              <Image src={CloseIcon} alt="иконка закрыть" className={styles.closeButton}/>
             </button> 
         </div>
 
@@ -30,7 +30,7 @@ export const HeaderUserWidget: FC<RecipeWidgetProps> = ({ close }) => {
           </div>
 
           <Link href="/profile" className={styles.userProfile}>
-            <Image src={ProfileIcon} alt="иконка профиля" />
+            <Image src={ProfileIcon} alt="иконка профиля" className={styles.ProfileIcon}/>
             <p className={styles.titleProfile}>Профиль</p>
           </Link>
 

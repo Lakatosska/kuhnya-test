@@ -1,5 +1,13 @@
 .main {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 40px;
+}
+
+@media screen and (max-width: 390px) {
+  .main {
+    padding: 14px;
+  }
 }

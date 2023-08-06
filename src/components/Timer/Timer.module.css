@@ -7,6 +7,13 @@
   height: 64px;
 }
 
+@media screen and (max-width: 390px) {
+  .button {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .button:hover {
   background-color: var(--button-hover);
 }
@@ -18,6 +25,12 @@
   background-color: var(--color-black);
 }
 
+@media screen and (max-width: 390px) {
+  .timer {
+    height: 22px;
+  }
+}
+
 .timeMin {
   font-size: 60px;
   font-weight: 500;
@@ -25,9 +38,30 @@
   margin-left: 26px;
 }
 
+@media screen and (max-width: 390px) {
+  .timeMin{
+    font-size: 20px;
+    margin-left: 8px;
+  }
+}
+
 .timeSec {
   font-size: 60px;
   font-weight: 500;
   color: var(--color-bg);
   margin-left: 10px;
+}
+
+@media screen and (max-width: 390px) {
+  .timeSec {
+    font-size: 20px;
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .clockIcon {
+    width: 22px;
+    height: 22px;
+  }
 }
