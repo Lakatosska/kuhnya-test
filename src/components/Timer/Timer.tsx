@@ -34,11 +34,13 @@ export function Timer() {
           <Image
           src={PauseIcon}
           alt="pause"
+          className={styles.clockIcon}
           />) : 
           (
           <Image
           src={ClockIcon}
           alt="play"
+          className={styles.clockIcon}
           />
           )}
       </button>

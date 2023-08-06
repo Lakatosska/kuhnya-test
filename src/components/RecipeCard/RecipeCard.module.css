@@ -7,6 +7,13 @@
   height: 502px;
 }
 
+@media screen and (max-width: 390px) {
+  .card {
+    width: 118px;
+    height: 168px;
+  }
+}
+
 .image {
   display: block;
   width: 356px;
@@ -14,6 +21,14 @@
   object-fit: cover;
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+@media screen and (max-width: 390px) {
+  .image {
+    width: 118px;
+    height: 136px;
+    border-radius: 9px;
+  }
 }
 
 .categoryContainer {
@@ -29,15 +44,30 @@
   left: 12px;
 }
 
+@media screen and (max-width: 390px) {
+  .categoryContainer {
+    border-radius: 10px;
+    padding: 4px 5px;
+    position: absolute;
+    top: 114px;
+    left: 4px;
+  }
+}
+
 .category {
   font-size: 28px;
   color: var(--color-text-white);
 }
 
+@media screen and (max-width: 390px) {
+  .category {
+    font-size: 10px;
+  }
+}
+
 .titleContainer {
   max-height: 84px;
   overflow: hidden;
-  
 }
 
 .title {
@@ -45,4 +75,11 @@
   padding: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+@media screen and (max-width: 390px) {
+  .title {
+    font-size: 10px;
+    padding: 4px;
+  }
 }

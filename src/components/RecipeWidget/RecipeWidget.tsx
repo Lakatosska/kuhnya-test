@@ -26,7 +26,7 @@ export const RecipeWidget: FC<RecipeWidgetProps> = ({ close }) => {
       </div>
 
       <button type="button" onClick={()=> close()} className={styles.button}>
-        <Image src={CloseIcon} alt="close button" />
+        <Image src={CloseIcon} alt="close button" className={styles.icon}/>
       </button>
     </section>
   )

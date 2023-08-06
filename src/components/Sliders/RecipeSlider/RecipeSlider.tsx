@@ -24,7 +24,7 @@ export const RecipeSlider: FC<RecipeSliderProps> = ({ data, title, link }) => {
       <SliderTitle title={title} link={link}/>
       <Swiper
         slidesPerView={'auto'}
-        spaceBetween={24}
+        spaceBetween={8}
         freeMode={true}
         modules={[FreeMode]}
         className={styles.swiper}

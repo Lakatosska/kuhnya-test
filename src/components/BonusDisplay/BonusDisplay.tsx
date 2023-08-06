@@ -8,7 +8,7 @@ export const BonusDisplay = () => {
     <>
       <p className={styles.titleBonus}>Ваши баллы</p>
       <div className={styles.infoBonus}>
-        <Image src={BonusCrown} alt="иконка бонуса" />
+        <Image src={BonusCrown} alt="иконка бонуса" className={styles.icon}/>
         <span className={styles.digits}>{user.bonus}</span>
       </div>
     </>

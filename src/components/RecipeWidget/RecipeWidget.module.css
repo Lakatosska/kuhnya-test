@@ -1,5 +1,5 @@
 .widget {
-  width: 1090px;
+  width: 100%;
   height: 220px;
   background-color: var(--color-black);
   border-radius: var(--border-radius);
@@ -12,6 +12,15 @@
   padding: 0 52px 0 0;
 }
 
+@media screen and (max-width: 390px) {
+  .widget {
+    height: 74px;
+    padding: 0 18px 0 0;
+    border: 2px solid var(--black);
+    border-radius: 12px;
+  }
+}
+
 .image{
   width: 230px;
   height: 220px;
@@ -20,10 +29,23 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 390px) {
+  .image {
+    width: 76px;
+    height: 74px;
+  }
+}
+
 .info {
   display: flex;
   flex-direction: column;
   width: 550px;
+}
+
+@media screen and (max-width: 390px) {
+  .info {
+    width: 184px;
+  }
 }
 
 .button {
@@ -35,6 +57,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 390px) {
+  .button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
 }
 
 .button:hover {
@@ -53,6 +83,13 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 390px) {
+  .recipeTitle {
+    font-size: 10px;
+    margin-top: 7px;
+  }
+}
+
 .clock {
   display: flex;
   align-items: center;
@@ -62,4 +99,18 @@
   font-size: 50px;
   color: var(--color-white);
   margin-left: 30px;
+}
+
+@media screen and (max-width: 390px) {
+  .time {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
 }
